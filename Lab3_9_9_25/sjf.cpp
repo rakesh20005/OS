@@ -57,6 +57,9 @@ int main(){
         }
 
   }
+      sort(p.begin(),p.end(),[](Process &a,Process &b){
+    return a.completion<b.completion;
+  });
    cout << "\nPID\tArrival\tBurst\tCompletion\tTurnaround\tWaiting\tResponse\n";
     for (auto &proc : p) {
         cout << "P" << proc.pid << "\t"
