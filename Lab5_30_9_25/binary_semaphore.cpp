@@ -4,7 +4,7 @@ using namespace std;
 
 struct binary_semaphore
 {
-    int value;
+    bool value;
     queue<int>suspended_list;
    
 };
